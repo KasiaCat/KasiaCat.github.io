@@ -290,10 +290,6 @@ h1:hover {
   min-height: 14vh;
 }
 
-placeholder {
-  font-weight: 500;
-}
-
 .button_design {
   background: transparent;
   margin: 2% auto 2% auto;
@@ -312,4 +308,22 @@ placeholder {
 
 .user_input::-webkit-input-placeholder {
   font-weight: bold;
+}
+
+footer {
+  background-color: #000000;
+}
+
+.footer_text {
+  color: #ffffff;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 2vh;
+  text-align: center;
+  padding: 1% 1%;
+}
+
+.social-media {
+  color: #ffffff;
+  text-align: center;
+  font-size: 200%;
 }
