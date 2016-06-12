@@ -7,8 +7,6 @@ body {
   margin: 1% 0% 0% 1%;
 }
 
-
-
 .top {
   position: fixed;
   top: 0;
@@ -20,32 +18,32 @@ body {
   border-bottom: 1px solid #d2d0d3;
   height: 10vh;
   width: 100%;
+  color: #000000;
 }
 
-.logo, .show-links {
-  margin-bottom: 1.5%;
-  margin-top: 1.5%;
-}
-
-.logo {
-  float: left;
-}
-
-.show-links {
-  float: right;
-}
-
-.url {
-  color: #527a7a;
+.top-info {
+  color: #000000;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 3vh;
+  font-weight: bold;
+  text-align: center;
+  padding: 1% 1%;
   text-transform: capitalize;
-  text-decoration: none;
+  margin-top: 7%;
 }
-.logo a:hover {
-  cursor: default;
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style-type: none;
 }
 
 a:hover {
   color: #900000;
+  text-decoration: none;
 }
 
 .signature {
@@ -108,9 +106,8 @@ h1:hover {
   padding: 1.5%;
 }
 
-.logo span {
+.top-info span {
   font-family: 'Allura', 'Verdana', cursive;
-  font-size: 5vh;
 }
 
 .portfolio h3, .form h3 {
@@ -129,22 +126,15 @@ h1:hover {
   font-family: 'Caveat', 'Verdana', cursive;
 }
 
-.portfolio_number {
-  display: inline-block;
-  height: 90vh;
-  position: relative;
-  margin-left: 1%;
-}
-
-.pictures:hover {
-  transform: translate3d(0, 0, 0);
-  filter: opacity(60%);
-  -webkit-filter: opacity(60%);
-  -moz-filter: opacity(60%);
-}
-
 .gallery {
   background-color: #101010;
+  padding top: 1%;
+  margin: 1% 0 1% 0;
+  width: 100%;
+}
+
+.portfolio {
+  background-color: #ffffff;
   padding top: 1%;
   margin: 1% 0 1% 0;
   width: 100%;
@@ -162,6 +152,15 @@ h1:hover {
   padding-bottom: 1%;
 }
 
+.portfolio-title {
+  font-family: 'Allura', 'Verdana', cursive;
+  font-size: 33px;
+  color: #000000;
+  text-align: center;
+  margin-top: 0;
+  padding: 3% 0 3% 0;
+}
+
 .gallery-title {
   font-family: 'Allura', 'Verdana', cursive;
   font-size: 33px;
@@ -171,11 +170,25 @@ h1:hover {
   padding: 3% 0 3% 0;
 }
 
-.content {
+.content, .portfolio-content, .info-content, .top-content {
   width: 90%;
   padding: 0 20px 0 20px;
   font-size: 0;
   margin: 0 auto;
+}
+
+.portfolio-column {
+  width: 48%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 0.5%;
+}
+
+.info-column, .top-column {
+  width: 45%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 0.5%;
 }
 
 .column {
@@ -188,6 +201,31 @@ h1:hover {
 .box-container {
   margin-bottom: 20px;
   overflow: hidden;
+}
+
+.inside-container {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.inside-one {
+  background-image: url("images/buda.jpeg");
+  height: 470px;
+}
+
+.inside-two {
+  background-image: url("images/bridge2.jpg");
+  height: 470px;
+}
+
+.inside-three {
+  background-image: url("images/bridge3.jpg");
+  height: 470px;
+}
+
+.inside-four {
+  background-image: url("images/bridge1.jpg");
+  height: 470px;
 }
 
 .box--1 {
@@ -241,6 +279,24 @@ h1:hover {
   filter: opacity(60%);
   -webkit-filter: opacity(60%);
   -moz-filter: opacity(60%);
+}
+
+.inside {
+  background-size: cover;
+  width: 120%;
+  background-repeat: no-repeat;
+  transform: translate3d(-50px, 0, 0);
+  filter: brightness(65%);
+  -webkit-filter: brightness(65%);
+  -moz-filter:  brightness(65%);
+  transition: filter 0.6s ease, transform 0.75s ease;
+}
+
+.inside:hover {
+  transform: translate3d(0, 0, 0);
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
 }
 
 #paris {
@@ -311,7 +367,7 @@ h1:hover {
 }
 
 footer {
-  background-color: #000000;
+  background-image: url("images/umbrella.jpg");
 }
 
 .footer_text {
@@ -320,10 +376,16 @@ footer {
   font-size: 2vh;
   text-align: center;
   padding: 1% 1%;
+  text-transform: capitalize;
+  font-weight: bolder;
 }
 
 .social-media {
   color: #ffffff;
   text-align: center;
-  font-size: 200%;
+  font-size: 220%;
+}
+
+.social-media a:hover {
+  color: #ff0000;
 }
